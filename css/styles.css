@@ -48,8 +48,7 @@
     width: 60%;
 }
 
-.fa-solid fa-magnifying-glass 
-{
+.fa-solid fa-magnifying-glass {
     color: red;
 }
 
@@ -83,13 +82,15 @@
 .fa fa-shopping-basket {
     margin-right: 5px;
 }
-#menu-btn, #close-btn
-{
+
+#menu-btn,
+#close-btn {
     font-size: 30px;
     margin: 10px;
     color: red;
     display: none;
 }
+
 @media only screen and (max-width: 980px) {
     .top-nav-bar {
         height: 118px;
@@ -114,9 +115,9 @@
         width: 100%;
     }
 }
+
 /*------------Side-Menu---------*/
-.side-menu
-{
+.side-menu {
     height: 79%;
     width: 15%;
     font-size: 14px;
@@ -124,7 +125,85 @@
     z-index: 2;
     background-color: #ddd;
 }
-.side-menu:hover
-{
+
+.side-menu:hover {
     color: darkred;
+}
+
+/*---------------slider css---------------*/
+.slider {
+    width: 65%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+
+.carousel {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0, 5);
+}
+
+/* ------featured-categories-------- */
+.featured-categories {
+    margin: 50px 0;
+}
+
+.featured-categories img {
+    width: 55%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories :hover
+{
+    transform: scale(1.1);
+}
+/* ----On Sale Products css=--- */
+.title-box
+{
+    background: red;
+    color: #fff;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.title-box h2 
+{
+    font-size: 24px;
+}
+.title-box::after
+{
+    content: '';
+    border-top: 40px solid red;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px; 
+}
+/* -----------product-top css----------- */
+.product-top
+{
+    width: 100%;
+}
+.overlay-right
+{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay-right .btn-secondary
+{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product-top:hover .overlay-right
+{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
 }
