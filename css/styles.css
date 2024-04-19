@@ -1,21 +1,130 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
-body
-{
-    background-color: aliceblue;
-    font-family: sans-serif
-    ;
+
+.body {
+    background-color: rgb(253, 253, 253);
+    font-family: sans-serif;
 }
-top-nav-bar
-{ 
+
+.top-nav-bar {
     height: 57px;
     top: 0;
     position: sticky;
-    background: #fff;
+    background: rgb(254, 255, 255);
     margin-bottom: 20px;
     border-bottom: 3px solid red;
     z-index: 2;
+}
+
+.logo {
+    height: 40px;
+    margin: 10px 10px;
+}
+
+.form-control {
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid red !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.input-group-text {
+    background: hsl(247, 46%, 89%);
+    border: 1px solid darkblue;
+    margin: 8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 20 !important;
+    border-bottom-right-radius: 20 !important;
+    cursor: pointer;
+}
+
+.search-box {
+    display: inline-flex;
+    width: 60%;
+}
+
+.fa-solid fa-magnifying-glass 
+{
+    color: red;
+}
+
+.menu-bar {
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li {
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: red;
+    cursor: pointer;
+}
+
+.menu-bar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa fa-shopping-basket {
+    margin-right: 5px;
+}
+#menu-btn, #close-btn
+{
+    font-size: 30px;
+    margin: 10px;
+    color: red;
+    display: none;
+}
+@media only screen and (max-width: 980px) {
+    .top-nav-bar {
+        height: 118px;
+        border-bottom: 0;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .menu-bar {
+        width: 100%;
+    }
+
+    .menu-bar ul {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .menu-bar ul li {
+        height: 57px;
+        width: 100%;
+    }
+}
+/*------------Side-Menu---------*/
+.side-menu
+{
+    height: 79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+.side-menu:hover
+{
+    color: darkred;
 }
